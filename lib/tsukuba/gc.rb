@@ -1,7 +1,7 @@
 require "tsukuba/gc/version"
 
 module Tsukuba
-  module Gc
+  module GC
     # Your code goes here...
   end
 end

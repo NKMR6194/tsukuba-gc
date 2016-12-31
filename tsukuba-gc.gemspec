@@ -5,13 +5,13 @@ require 'tsukuba/gc/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "tsukuba-gc"
-  spec.version       = Tsukuba::Gc::VERSION
+  spec.version       = Tsukuba::GC::VERSION
   spec.authors       = ["SAKATA Sinji"]
   spec.email         = ["sinji@sakasin.net"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Scan the schedule of garbage collection in Tsukuba from PDF."
+  spec.description   = "Scan the schedule of garbage collection in Tsukuba from PDF."
+  spec.homepage      = "https://github.com/NKMR6194/tsukuba-gc"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -28,6 +28,9 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_dependency "rmagick", "~>2.16.0"
+  spec.add_dependency "activesupport", "~>5.0.1"
 
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"

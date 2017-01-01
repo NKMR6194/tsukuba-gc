@@ -1,8 +1,6 @@
-# Tsukuba::Gc
+# tsukuba-gc
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tsukuba/gc`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+つくば市がPDFで配布しているごみ収集カレンダーを解析して、JSON形式で出力する
 
 ## Installation
 
@@ -22,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Example CLI
+
+    $ tsukuba-gc 28north.pdf 2016 -o 28north.json
+
+Type "tsukuba-gc –-help" for all available options.
+
+### Example Library
+
+```ruby
+require 'tsukuba-gc'
+
+Tsukuba::GC.parse(2016, "28north.pdf") #=> [schedule, ...]
+```
 
 ## Development
 
@@ -32,5 +42,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tsukuba-gc.
+Bug reports and pull requests are welcome on GitHub at https://github.com/NKMR6194/tsukuba-gc.
 

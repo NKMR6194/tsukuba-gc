@@ -2,6 +2,8 @@
 
 つくば市がPDFで配布しているごみ収集カレンダーを解析して、JSON形式で出力する
 
+tsukuba-gc is out of date. See [ysakasin/tsukuba-gc-lite](https://github.com/ysakasin/tsukuba-gc-lite).
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -43,4 +45,3 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/NKMR6194/tsukuba-gc.
-
